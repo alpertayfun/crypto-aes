@@ -1,0 +1,25 @@
+{
+  "name": "cryptoaes",
+  "version": "1.0.0",
+  "description": "Cross Platform Encryption - Decryption with AES ( SHA-256 )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alpertayfun/crypto-aes.git"
+  },
+  "keywords": [
+    "crypto"
+  ],
+   "dependencies": {
+    "crypto-js": "^3.1.6"
+  },
+  "author": "Alper Tayfun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alpertayfun/crypto-aes/issues"
+  },
+  "homepage": "https://github.com/alpertayfun/crypto-aes#readme"
+}

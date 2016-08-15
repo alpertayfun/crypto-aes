@@ -2,7 +2,23 @@
 --------
 
 
-### Android & Web Client Side Encryption - Decryption
+### Cross Platform / Encryption - Decryption
+
+
+This project contains 
+
+
+Platforms:
+
+- iOS ( not tested yet)
+
+- Android
+
+- Windows (C#). ( not tested yet )
+
+- Node.js
+
+- Web
 
 ## Android Side
 
