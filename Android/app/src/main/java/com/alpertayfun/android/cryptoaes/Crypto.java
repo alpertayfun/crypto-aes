@@ -257,4 +257,22 @@ public class Crypto {
         }
     }
 
+    public static String encrypts(String message, String key, String ivs){
+        try {
+            return Encrypt(message,key,hexStringToByteArray(bytesToHex(ivs.getBytes("UTF-8"))));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static String decrypts(String message, String key, String ivs){
+        try {
+            return Decrypt(message,key,hexStringToByteArray(bytesToHex(ivs.getBytes("UTF-8"))));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }

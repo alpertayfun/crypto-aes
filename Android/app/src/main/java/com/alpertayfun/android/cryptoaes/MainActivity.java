@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import java.io.UnsupportedEncodingException;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -26,32 +24,16 @@ public class MainActivity extends AppCompatActivity {
         String message = "hello world!!!";
 
         //ecnrypted string
-        String encrypted = encrypts(message,key,iv);
+        String encrypted = Crypto.encrypts(message,key,iv);
 
         Log.d("Crypto",encrypted);
 
         //decrypted string
-        String decrypted = decrypts(encrypted,key,iv);
+        String decrypted = Crypto.decrypts(encrypted,key,iv);
 
         Log.d("Crypto",decrypted);
 
     }
 
-    public static String encrypts(String message, String key, String ivs){
-        try {
-            return Crypto.Encrypt(message,key,Crypto.hexStringToByteArray(Crypto.bytesToHex(ivs.getBytes("UTF-8"))));
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 
-    public static String decrypts(String message, String key, String ivs){
-        try {
-            return Crypto.Decrypt(message,key,Crypto.hexStringToByteArray(Crypto.bytesToHex(ivs.getBytes("UTF-8"))));
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 }
