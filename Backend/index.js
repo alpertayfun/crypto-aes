@@ -1,4 +1,3 @@
-var CryptoJS = require("crypto-js");
 var Crypto = require("./crypto.js");
 
 var message = "hello world!!!";

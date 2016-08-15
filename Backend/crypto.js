@@ -16,8 +16,7 @@ module.exports.encrypts = function(message,key,iv){
 
 
       var encrypted64 = cipher.ciphertext.toString(CryptoJS.enc.Base64);
-      if()
-        console.log(encrypted64);
+      console.log(encrypted64);
       return encrypted64;
 };
 
