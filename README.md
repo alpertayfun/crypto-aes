@@ -2,7 +2,7 @@
 --------
 
 
-### Cross Platform / Encryption - Decryption
+### Cross Platform SHA-256 bit AES Encryption - Decryption
 
 
 Project contains the implementation SHA-256 bit AES encryption which works on stated platforms only. Easy use and implementation.
