@@ -132,3 +132,7 @@ console.log(r);
 var r = Crypto.decrypts(r,key,iv);
 console.log(r);
 ```
+
+Do you want to donate ?
+
+[![Support on Gratipay](https://img.shields.io/gratipay/alpertayfun.svg)](https://gratipay.com/~alpertayfun/)
